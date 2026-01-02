@@ -1,0 +1,17 @@
+__pycache__
+build/
+.venv
+.pytest_cache
+*.egg-info
+__pypackages__
+.ipynb_checkpoints
+.vscode
+.DS_Store
+env/
+venv/
+*.csv
+myenv/
+.tox/*
+*.png
+*.html
+*.coverage

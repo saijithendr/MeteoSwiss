@@ -6,15 +6,6 @@ A comprehensive Python library for accessing, managing, and analyzing Swiss weat
 
 ## Installation
 
-The `meteoschweiz` project can be installed like any standard Python package using `pip install <package>`. However, due to ongoing development, the project is not yet available on PyPI. The recommended way to install the project in your local environment is through the company's GitLab repository:
-
-**Installation Command:**
-* ```GIT_SSL_NO_VERIFY=true pip install git+https://oauth2:<PAT_TOKEN>@lab.iabg.de/Gangireddy/meteoschweiz.git ```
-
-**Access Token:**
-- The Personal Access Token (PAT) is stored in `Master KeyPass`
-- If you don't have access, contact `Gangireddy@iabg.de`
-
 
 ## Usage
 

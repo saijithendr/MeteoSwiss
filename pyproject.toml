@@ -3,12 +3,12 @@ requires = ["setuptools>=65.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "meteoschweiz"
+name = "meteoswiss"
 version = "0.1.0"
 description = "Python package for accessing and processing MeteoSwiss weather data"
 readme = "README.md"
 authors = [
-    {name = "Gangireddy Sai Jithendra", email = "Gangireddy@iabg.de"}
+    {name = "Gangireddy Sai Jithendra", email = "jithenkumar1@gmail.com"}
 ]
 license = {text = "MIT"}
 requires-python = ">=3.8"
@@ -28,8 +28,7 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://lab.iabg.de/Gangireddy/meteoschweiz"
-"Bug Tracker" = "https://lab.iabg.de/Gangireddy/meteoschweiz/-/issues"
+"Homepage" = "https://github.com/saijithendr/MeteoSwiss"
 
 [tool.ruff]
 # Set the line length

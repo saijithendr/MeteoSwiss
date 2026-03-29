@@ -29,7 +29,7 @@ A comprehensive Python library for accessing, managing, and analyzing Swiss weat
 pip install meteoschweiz
 ```
 
-**Requirements:** Python 3.8+ · pandas ≥ 1.5.0 · requests ≥ 2.28.0
+**Requirements:** Python 3.9+ · pandas ≥ 1.5.0 · requests ≥ 2.28.0
 
 ---
 

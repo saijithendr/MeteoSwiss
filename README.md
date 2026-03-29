@@ -1,8 +1,8 @@
 # MeteoSwiss
 
 [![CI](https://github.com/saijithendr/MeteoSwiss/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/saijithendr/MeteoSwiss/actions/workflows/ci.yml)
-[![PyPI version](https://badge.fury.io/py/meteoswiss.svg)](https://pypi.org/project/meteoswiss/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/meteoswiss.svg)](https://pypi.org/project/meteoswiss/)
+[![PyPI version](https://badge.fury.io/py/meteoschweiz.svg)](https://pypi.org/project/meteoschweiz/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/meteoschweiz.svg)](https://pypi.org/project/meteoschweiz/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A comprehensive Python library for accessing, managing, and analyzing Swiss weather data from MeteoSwiss (Federal Office of Meteorology and Climatology). This toolkit provides high-level interfaces for working with weather stations, parameters, historic data, and forecasts.
@@ -26,7 +26,7 @@ A comprehensive Python library for accessing, managing, and analyzing Swiss weat
 ## Installation
 
 ```bash
-pip install meteoswiss
+pip install meteoschweiz
 ```
 
 **Requirements:** Python 3.8+ · pandas ≥ 1.5.0 · requests ≥ 2.28.0
@@ -303,7 +303,7 @@ Open an issue on GitHub: [New Bug Report](https://github.com/saijithendr/MeteoSw
 
 Please include:
 - Python version and OS
-- `meteoswiss` version (`pip show meteoswiss`)
+- `meteoschweiz` version (`pip show meteoschweiz`)
 - A minimal code snippet that reproduces the problem
 
 ---

@@ -574,7 +574,7 @@ class MeteoSwissClient:
         station_id: str,
         start_date: pd.Timestamp | None = None,
         end_date: pd.Timestamp | None = None,
-    ) -> pd.DataFrame:
+    ) -> pd.DataFrame | None:
         """Download and parse a MeteoSwiss CSV file with optional date filtering."""
         try:
             logger.info(f"Downloading CSV from: {url}")
@@ -668,7 +668,7 @@ class MeteoSwissClient:
         parameters: list[str] | None = None,
         rename_columns: bool = True,
         include_units: bool = True,
-    ) -> pd.DataFrame:
+    ) -> pd.DataFrame | None:
         """
         Fetch station data from STAC API for specified datetime range.
 
@@ -1142,7 +1142,7 @@ class HistoricWeatherHandler:
         start_date: str,
         end_date: str,
         daily: bool = True,
-    ) -> pd.DataFrame:
+    ) -> pd.DataFrame | None:
         """
         Get temperature history for a station.
 
@@ -1192,7 +1192,7 @@ class HistoricWeatherHandler:
         station_name_or_id: str,
         start_date: str,
         end_date: str,
-    ) -> pd.DataFrame:
+    ) -> pd.DataFrame | None:
         """
         Get precipitation history for a station.
 

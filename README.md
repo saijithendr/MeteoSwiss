@@ -316,6 +316,18 @@ Please include:
 
 ---
 
+## Data Source & Attribution
+
+This library accesses data from **MeteoSwiss** (Federal Office of Meteorology and Climatology, Switzerland).
+
+**Source: MeteoSwiss** — data is made available under the [Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licence. When you use or redistribute data obtained through this library, you must include the attribution **"Source: MeteoSwiss"**.
+
+This project is an independent open-source tool and is not endorsed by or affiliated with MeteoSwiss.
+
+Users are responsible for complying with MeteoSwiss [Terms of Use](https://opendatadocs.meteoswiss.ch/general/terms-of-use), including avoiding excessive or high-frequency downloads.
+
+---
+
 ## License
 
 [MIT](LICENSE) — Copyright (c) 2026 Sai Jithendra Gangireddy

@@ -1,12 +1,12 @@
-# MeteoSwiss
+# swisswx
 
 [![CI](https://github.com/saijithendr/MeteoSwiss/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/saijithendr/MeteoSwiss/actions/workflows/ci.yml)
-[![PyPI version](https://badge.fury.io/py/meteoschweiz.svg)](https://pypi.org/project/meteoschweiz/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/meteoschweiz.svg)](https://pypi.org/project/meteoschweiz/)
+[![PyPI version](https://badge.fury.io/py/swisswx.svg)](https://pypi.org/project/swisswx/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/swisswx.svg)](https://pypi.org/project/swisswx/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A comprehensive Python library for accessing, managing, and analyzing Swiss weather data from MeteoSwiss (Federal Office of Meteorology and Climatology). This toolkit provides high-level interfaces for working with weather stations, parameters, historic data, and forecasts.
-
+> ⚠️ This is an unofficial, community-made package for accessing MeteoSwiss Open Data. It is not affiliated with or endorsed by the Federal Office of Meteorology and Climatology MeteoSwiss.
 ---
 
 ## Table of Contents
@@ -26,7 +26,7 @@ A comprehensive Python library for accessing, managing, and analyzing Swiss weat
 ## Installation
 
 ```bash
-pip install meteoschweiz
+pip install swisswx
 ```
 
 **Requirements:** Python 3.9+ · pandas ≥ 1.5.0 · requests ≥ 2.28.0
@@ -40,7 +40,7 @@ pip install meteoschweiz
 #### 1.1 Stations
 
 ```python
-from meteoschweiz.metadata.stations import SwissWeatherStations
+from swisswx.metadata.stations import SwissWeatherStations
 
 stations = SwissWeatherStations()
 stations_df = stations.load()  # returns all available weather stations in Switzerland
@@ -58,14 +58,14 @@ nearby = stations.find_nearby(lat=47.0, lon=7.4, radius_km=30)
 `MetaParametersLoader` loads parameter definitions from any MeteoSwiss CSV source URL.
 
 ```python
-from meteoschweiz.metadata.parameters import MetaParametersLoader
+from swisswx.metadata.parameters import MetaParametersLoader
 
 loader = MetaParametersLoader()
 
 # Register sources
 loader.add_source(
     name="Forecast Parameters",
-    url="https://data.geo.admin.ch/ch.meteoschweiz.ogd-local-forecasting/ogd-local-forecasting_meta_parameters.csv",
+    url="https://data.geo.admin.ch/ch.swisswx.ogd-local-forecasting/ogd-local-forecasting_meta_parameters.csv",
     description="MeteoSwiss forecast parameters",
     encoding="latin-1",
     delimiter=";",
@@ -74,7 +74,7 @@ loader.add_source(
 
 loader.add_source(
     name="Historic Parameters",
-    url="https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_parameters.csv",
+    url="https://data.geo.admin.ch/ch.swisswx.ogd-smn/ogd-smn_meta_parameters.csv",
     description="MeteoSwiss historic/SMN parameters",
     encoding="latin-1",
     delimiter=";",
@@ -107,7 +107,7 @@ print(loader.summary())
 ### 2. Historic Weather Data
 
 ```python
-from meteoschweiz.historic.historic_handler import HistoricWeatherHandler, MeteoSwissClient
+from swisswx.historic.historic_handler import HistoricWeatherHandler, MeteoSwissClient
 
 client = MeteoSwissClient()
 historic_handler = HistoricWeatherHandler(
@@ -146,7 +146,7 @@ historic_handler.export_to_csv(result, "grenchen_june_2023.csv")
 ### 3. Local Forecast Data
 
 ```python
-from meteoschweiz.forecasts.forecast_handler import LocalForecastHandler
+from swisswx.forecasts.forecast_handler import LocalForecastHandler
 
 forecast_handler = LocalForecastHandler(
     stations_handler=stations,   # from section 1.1
@@ -270,8 +270,8 @@ git checkout -b feature/your-feature-name
 ```bash
 pytest tests/ -v                              # all tests
 pytest tests/ -m "not integration"            # skip network tests
-pytest tests/ --cov=src/meteoswiss           # with coverage
-tox                                           # all Python versions (3.8–3.13)
+pytest tests/ --cov=src/swisswx             # with coverage
+tox                                           # all Python versions (3.9–3.13)
 ```
 
 ### Lint and format
@@ -303,7 +303,7 @@ Open an issue on GitHub: [New Bug Report](https://github.com/saijithendr/MeteoSw
 
 Please include:
 - Python version and OS
-- `meteoschweiz` version (`pip show meteoschweiz`)
+- `swisswx` version (`pip show swisswx`)
 - A minimal code snippet that reproduces the problem
 
 ---

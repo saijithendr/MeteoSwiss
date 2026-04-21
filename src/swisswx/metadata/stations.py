@@ -86,7 +86,7 @@ class SwissWeatherStations:
         zurich_stations = stations.search('Zürich')
     """
 
-    STATIONS_URL = "https://data.geo.admin.ch/ch.meteoschweiz.ogd-local-forecasting/ogd-local-forcasting_meta_point.csv"
+    STATIONS_URL = "https://data.geo.admin.ch/ch.meteoschweiz.ogd-local-forecasting/ogd-local-forecasting_meta_point.csv"
 
     def __init__(self):
         """Initialize handler"""

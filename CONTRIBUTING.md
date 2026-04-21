@@ -81,7 +81,7 @@ Branch naming conventions:
 pytest tests/ -v
 
 # Run with coverage report
-pytest tests/ --cov=src/meteoswiss --cov-report=term-missing
+pytest tests/ --cov=src/swisswx --cov-report=term-missing
 
 # Run only fast (non-integration) tests
 pytest tests/ -m "not integration"

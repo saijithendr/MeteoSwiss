@@ -25,7 +25,7 @@ Closes #<!-- issue number -->
 - [ ] Existing tests pass (`pytest tests/`)
 - [ ] New tests added for new functionality
 - [ ] Linting passes (`ruff check src/ tests/`)
-- [ ] Type checks pass (`mypy src/meteoswiss`)
+- [ ] Type checks pass (`mypy src/swisswx`)
 
 ## Example usage
 ```python

@@ -25,7 +25,7 @@ assignees: ''
 
 ## Environment
 - Python version:
-- `meteoswiss` version:
+- `swisswx` version (`pip show swisswx`):
 - Operating System:
 - pandas version:
 - requests version:
